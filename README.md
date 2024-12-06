@@ -117,32 +117,6 @@ The official Cds samples are divided in multiple categories depending on the sce
     </td>
     <td align="middle" valign="top">
       <b>
-        <a href="https://github.com/osisoft/sample-adh-authentication_hybrid-dotnet"> Hybrid Flow</a>
-      </b>
-      <br />
-      Click for
-      <a href="docs/AUTHENTICATION.md"> details </a>
-      on this type of authentication
-      <br />
-      <br />
-      <table align="middle">
-        <tr>
-          <td align="middle">
-            <a href="https://github.com/osisoft/sample-adh-authentication_hybrid-dotnet">.NET</a>
-          </td>
-          <td align="middle">
-              <img
-                src="https://dev.azure.com/osieng/engineering/_apis/build/status/product-readiness/ADH/aveva.sample-adh-authentication_hybrid-dotnet?branchName=main"
-                alt="Build Status"
-              />
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td align="middle" valign="top">
-      <b>
         <a href="docs/AUTHENTICATION.md"> Authorization Code + PKCE </a>
       </b>
       <br />
@@ -187,7 +161,6 @@ The official Cds samples are divided in multiple categories depending on the sce
         </tr>
       </table>
     </td>
-    <td></td>
   </tr>
 </table>
 </details>
@@ -907,7 +880,7 @@ The official Cds samples are divided in multiple categories depending on the sce
 </details>
 <br>
 
-**Note**: Tests with automated UI browser components (such as Hybrid Authentication, Authorization Code Flow and Angular samples) fail intermittently due to automation issues.
+**Note**: Tests with automated UI browser components (Authorization Code Flow and Angular samples) fail intermittently due to automation issues.
 
 For OMF to Cds samples please see the OMF repository: [Aveva-Samples-OMF](https://github.com/osisoft/OSI-Samples-OMF)
 
