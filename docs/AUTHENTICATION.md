@@ -43,7 +43,7 @@ Currently CDS supports two authentication flows. Based on your requirements choo
 
 If you are writing software (client) to communicate with CDS without the presence of a user (resource owner), then this is the authentication flow you should follow. This flow was created for machine to machine communication.
 
-The client uses its Client Id and Client Secret to authenticate against CDS and is awarded an Access Token. It is assumed that the client stores the Client Secret in a safe location, and uses cryptographically secure channels -read https- to communicate with CDS. CDS only supports communication over https. No Refresh Token is awarded.
+The client uses its client id and client secret to authenticate against CDS and is awarded an access token. It is assumed that the client stores the client secret in a safe location, and uses cryptographically secure channels -read https- to communicate with CDS. CDS only supports communication over https. No refresh token is awarded.
 
 The overall steps for this process are as follows:
 1. Obtain the needed configuration information, including Tenant ID, Client ID, and Client Secret
@@ -62,11 +62,11 @@ If you are developing any application where a user (resource owner) needs to acc
 1. Requiring a client-verified code exchange for access token
 2. By not returning the access token in a redirect URI.
 
-The client app uses its Client Id and Client Secret to request an authorization code from the authorization server. The user is then directed to authenticate themselves with the authorization server (login prompt, 2 factor authentication, etc.) If the user successfully authenticates, an authorization code is returned to the client app, and the client can request Access Tokens with this authorization code. The client can then pass this Access Token in the authorization header in requests to get data from CDS.
+The client app uses its client id and client secret to request an authorization code from the authorization server. The user is then directed to authenticate themselves with the authorization server (login prompt, 2 factor authentication, etc.) If the user successfully authenticates, an authorization code is returned to the client app, and the client can request Access Tokens with this authorization code. The client can then pass this access token in the authorization header in requests to get data from CDS.
 
 ![image](https://github.com/user-attachments/assets/f22457fb-0d46-4ff7-8af2-31acbb145464)
 
-In this flow, no refresh token is provided. Authorization Code Flow supports silent refresh, which makes it possible to receive a new access token while the user is both using the application and logged in with the Identity Provider in the same browser session. This is done behind the scenes without interrupting the user experience. 
+In this flow, no refresh token is provided. Authorization Code Flow supports silent refresh, which makes it possible to receive a new access token while the user is both using the application and logged in with the identity provider in the same browser session. This is done behind the scenes without interrupting the user experience. 
 
 The sample for this authentication flow can be found [here for DotNet](https://github.com/osisoft/sample-adh-authentication_authorization-dotnet), [here for NodeJS](https://github.com/osisoft/sample-adh-authentication_authorization-nodejs), and [here for Python](https://github.com/osisoft/sample-adh-authentication_authorization-python).
 
